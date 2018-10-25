@@ -6,7 +6,7 @@ fileio.o: fileio.c
 
 run:
 	./out
-	chmod +rw output
+	chmod 600 output
 
 clean:
 	rm out

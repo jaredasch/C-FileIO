@@ -14,7 +14,7 @@ int main(){
 
     printf("Buffer: %s\n", buffer);
 
-    int fd_out = open("output", O_RDWR | O_CREAT);
+    int fd_out = open("output", O_CREAT | O_RDWR);
     printf("New file descriptor %d for output\n", fd_out);
     write(fd_out, buffer, 100);
     printf("Writing from buffer to output file...\n");
